@@ -6,15 +6,24 @@
     <title>Knew you would say yes!</title>
     <link rel="stylesheet" href="./yes_style.css">
 </head>
+<script>
+    function changeImage(imageName) {
+        const img = document.querySelector('.gif_container img');
+        img.src = `images/${imageName}`;
+    }
+</script>
 <body>
     <div class="container">
         <h1 class="header_text">Yippee! Let's have a great Valentine's day together. I love you baby!</h1>
         <div class="gif_container">
             <img src="images/meandbaby.jpeg" alt="Me and Baby">
         </div>
-        <div class="message">
-            <p>Looking forward to spending a wonderful day with you filled with love, laughter, and unforgettable memories. </p>
-            <p>More to come on this website!</p>
+        <h1 class="header_text">After eating at Chili's, select from the following options:</h1>
+        <div class="buttons">
+            <button class="yes-button" onclick="changeImage('daveandbusters.jpg')">Dave and Busters</button>
+            <button class="yes-button" onclick="changeImage('karaoke.jpg')">Karaoke</button>
+            <button class="yes-button" onclick="changeImage('movie.jpg')">Movie at Home</button>
+        </div>
     </div>
 </body>
 </html>
